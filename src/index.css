@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   z-index: 0;
+  max-height: 100vh;
 }
 
 .bgImage {
@@ -119,7 +120,7 @@ footer button i {
   padding: 1rem;
   overflow-y: scroll;
   height: 100%;
-  width: 95%;
+  width: 80%;
   max-width: 800px;
   margin-left: auto;
   background-color: #030615;
@@ -191,12 +192,19 @@ footer button i {
     position: relative;
     inset: unset;
     min-width: 30%;
+    max-height: 100vh;
     box-shadow: 0 0 40px 1px #030615;
-    overflow-y: scroll;
     z-index: 15;
   }
 
   .sidebarContents {
     margin-right: unset;
+    width: 95%;
+  }
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    min-width: 45%;
   }
 }
